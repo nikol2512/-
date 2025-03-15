@@ -1,4 +1,4 @@
-<html lang="he">
+=<html lang="he">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +7,22 @@
         /* סגנון כללי */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f0f8ff;
-            color: #333;
             margin: 0;
             padding: 0;
-            text-align: center;
+            background-color: #f7f7f7;
+            color: #333;
             overflow-x: hidden;
             transition: background-color 0.3s ease;
         }
 
         /* כותרת ראשית */
         header {
-            background: linear-gradient(45deg, #FBB034, #FFDD00);
-            padding: 80px 20px;
+            background: linear-gradient(45deg, #FF7F50, #FFDD00);
+            padding: 100px 20px;
             color: white;
             text-align: center;
-            position: relative;
             animation: fadeIn 2s ease-in-out;
+            position: relative;
         }
 
         header h1 {
@@ -31,7 +30,7 @@
             font-size: 3.5em;
             font-weight: bold;
             letter-spacing: 2px;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
         }
 
         header p {
@@ -48,11 +47,16 @@
 
         /* כותרות סעיפים */
         h2 {
-            color: #FBB034;
+            color: #FF7F50;
             font-size: 2.5em;
             margin-bottom: 15px;
             font-weight: bold;
             animation: slideUp 1.5s ease-out;
+        }
+
+        @keyframes slideUp {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
         }
 
         /* עיצוב הסקשנים */
@@ -65,6 +69,7 @@
             transition: all 0.3s ease;
             animation: slideUp 2s ease-out;
             max-width: 1000px;
+            text-align: center;
         }
 
         section:hover {
@@ -79,7 +84,50 @@
             color: #555;
         }
 
-        /* תמונות */
+        /* שירותים כרטיסים */
+        .service-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card h3 {
+            font-size: 1.8em;
+            color: #FF7F50;
+        }
+
+        .service-card p {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        /* כפתורים */
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 15px 30px;
+            background-color: #FF7F50;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        a:hover {
+            background-color: #FFDD00;
+            color: #333;
+        }
+
+        /* עיצוב תמונות */
         img {
             width: 100%;
             border-radius: 12px;
@@ -91,53 +139,14 @@
             transform: scale(1.05);
         }
 
-        /* רשימות שירותים */
-        ul {
-            list-style: none;
-            padding: 0;
-            text-align: left;
-            font-size: 1.3em;
-        }
-
-        ul li {
-            margin: 12px 0;
-            padding-left: 25px;
-            position: relative;
-        }
-
-        ul li:before {
-            content: '✔';
-            position: absolute;
-            left: 0;
-            color: #FBB034;
-            font-size: 1.5em;
-            top: 0;
-        }
-
-        /* קישורים */
-        a {
-            color: #FFDD00;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 8px 16px;
-            border-radius: 25px;
-            background-color: #4682b4;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        a:hover {
-            background-color: #FFDD00;
-            color: #333;
-        }
-
         /* פוטר */
         footer {
-            background-color: #6a5acd;
+            background-color: #FF7F50;
             padding: 20px;
             position: fixed;
             bottom: 0;
             width: 100%;
-            color: #fff;
+            color: white;
             text-align: center;
             font-size: 1.2em;
         }
@@ -165,7 +174,6 @@
                 font-size: 1.1em;
             }
         }
-
     </style>
 </head>
 <body>
@@ -178,17 +186,24 @@
         <h2>על טובה</h2>
         <p>טובה מומחית בתחום טיפולים הוליסטיים, מטפלת בטראומות, חרדות, חוסר נחת, ושלום בית.</p>
         <p>עם ניסיון רחב בעבודה עם מגוון בעיות, היא כאן כדי להחזיר לך את השלווה והאיזון בחיים.</p>
-        <img src="https://images.unsplash.com/photo-1531308581242-42916e0b6355?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjA0OXwwfDF8c2VhcmNofDJ8fG9yaWVuZ3xlbnwwfDB8fHwyfHw%3D&ixlib=rb-1.2.1&q=80&w=1080" alt="טיפולים הוליסטיים">
+        <img src="https://images.unsplash.com/photo-1531308581242-42916e0b6355?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjA0OXwwfDF8c2VhcmNofDJ8fG9yaWVuZ3xlbnwwfDB8fHwyfHw%3D&ixlib=rb-1.2.1&q=80&w=1080" alt="טיפול הוליסטי">
     </section>
 
     <section id="services">
         <h2>השירותים שלנו</h2>
-        <ul>
-            <li>טיפולי גוף ונפש</li>
-            <li>טיפול בטראומות וחרדות</li>
-            <li>הכוונה לטיפול בבעיות זוגיות ושלום בית</li>
-        </ul>
-        <img src="https://images.unsplash.com/photo-1506514500612-bda68c052e6f?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg3fHwyfDF8c2VhcmNofDd8fGZlZWFsJTIwbGVpc3VyZXxlbnwwfDB8fHwyfHw%3D&ixlib=rb-1.2.1&q=80&w=1080" alt="שירותים הוליסטיים">
+        <div class="service-card">
+            <h3>טיפולי גוף ונפש</h3>
+            <p>החזרת האיזון בין גוף לנפש. טיפולים מותאמים אישית לכל אדם.</p>
+        </div>
+        <div class="service-card">
+            <h3>טיפול בטראומות וחרדות</h3>
+            <p>עבודה עם טראומות וחרדות באמצעות טכניקות הוליסטיות מרגיעות.</p>
+        </div>
+        <div class="service-card">
+            <h3>הכוונה לטיפול בבעיות זוגיות ושלום בית</h3>
+            <p>הכוונה ותמיכה לזוגות לשיפור התקשורת והחיים המשותפים.</p>
+        </div>
+        <a href="#contact">צרו קשר עכשיו</a>
     </section>
 
     <section id="testimonials">
