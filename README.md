@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>אור של טובה - טיפולים הוליסטיים</title>
     <style>
+        /* סגנון כללי */
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f0f8ff;
@@ -14,11 +15,13 @@
             text-align: center;
         }
 
+        /* כותרת ראשית */
         header {
-            background-color: #87cefa;
+            background: linear-gradient(45deg, #6a5acd, #4682b4);
             padding: 40px;
-            color: #fff;
-            border-bottom: 5px solid #4682b4;
+            color: white;
+            text-align: center;
+            border-bottom: 5px solid #333;
         }
 
         header h1 {
@@ -28,30 +31,40 @@
         }
 
         header p {
-            font-size: 1.2em;
+            font-size: 1.3em;
             margin-top: 10px;
+            font-weight: lighter;
         }
 
+        /* כותרות סעיפים */
+        h2 {
+            color: #4b8b3b;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        /* עיצוב הסקשנים */
         section {
             padding: 30px;
             margin: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
         }
 
-        h2 {
-            color: #4682b4;
-            font-size: 2em;
-            margin-bottom: 15px;
+        section:hover {
+            transform: scale(1.02);
         }
 
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
+        section p {
+            font-size: 1.2em;
+            line-height: 1.8;
             margin-bottom: 20px;
         }
 
+        /* רשימות שירותים */
         ul {
             list-style: none;
             padding: 0;
@@ -60,9 +73,10 @@
         }
 
         ul li {
-            margin: 10px 0;
+            margin: 12px 0;
         }
 
+        /* קישורים */
         a {
             color: #4682b4;
             text-decoration: none;
@@ -73,8 +87,9 @@
             text-decoration: underline;
         }
 
+        /* פוטר */
         footer {
-            background-color: #87cefa;
+            background-color: #6a5acd;
             padding: 15px;
             position: fixed;
             bottom: 0;
@@ -88,7 +103,7 @@
             margin: 0;
         }
 
-        /* Responsive Design */
+        /* עיצוב רספונסיבי */
         @media screen and (max-width: 768px) {
             header h1 {
                 font-size: 2.2em;
@@ -102,7 +117,12 @@
             h2 {
                 font-size: 1.8em;
             }
+
+            p {
+                font-size: 1em;
+            }
         }
+
     </style>
 </head>
 <body>
