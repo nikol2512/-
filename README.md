@@ -8,32 +8,35 @@
         /* סגנון כללי */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f0f8ff;
+            background-color: #f3f4f8;
             color: #333;
             margin: 0;
             padding: 0;
             text-align: center;
             overflow-x: hidden;
+            transition: background-color 0.3s ease;
         }
 
         /* כותרת ראשית */
         header {
-            background: linear-gradient(45deg, #6a5acd, #4682b4);
-            padding: 50px;
+            background: linear-gradient(45deg, #FBB034, #FFDD00);
+            padding: 80px 20px;
             color: white;
             text-align: center;
-            border-bottom: 5px solid #333;
+            position: relative;
             animation: fadeIn 2s ease-in-out;
         }
 
         header h1 {
             margin: 0;
-            font-size: 3.5em;
+            font-size: 4em;
             font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
         }
 
         header p {
-            font-size: 1.3em;
+            font-size: 1.5em;
             margin-top: 10px;
             font-weight: lighter;
         }
@@ -51,7 +54,7 @@
 
         /* כותרות סעיפים */
         h2 {
-            color: #4b8b3b;
+            color: #FBB034;
             font-size: 2.5em;
             margin-bottom: 15px;
             font-weight: bold;
@@ -60,23 +63,26 @@
 
         /* עיצוב הסקשנים */
         section {
-            padding: 30px;
-            margin: 20px;
-            background-color: #ffffff;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            margin: 30px auto;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             animation: slideUp 2s ease-out;
+            max-width: 1000px;
         }
 
         section:hover {
-            transform: scale(1.02);
+            transform: scale(1.05);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
         }
 
         section p {
-            font-size: 1.2em;
+            font-size: 1.3em;
             line-height: 1.8;
             margin-bottom: 20px;
+            color: #555;
         }
 
         /* תמונות */
@@ -96,34 +102,50 @@
             list-style: none;
             padding: 0;
             text-align: left;
-            font-size: 1.2em;
+            font-size: 1.3em;
         }
 
         ul li {
             margin: 12px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        ul li:before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            color: #FBB034;
+            font-size: 1.5em;
+            top: 0;
         }
 
         /* קישורים */
         a {
-            color: #4682b4;
+            color: #FFDD00;
             text-decoration: none;
             font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 25px;
+            background-color: #4682b4;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         a:hover {
-            text-decoration: underline;
+            background-color: #FFDD00;
+            color: #333;
         }
 
         /* פוטר */
         footer {
             background-color: #6a5acd;
-            padding: 15px;
+            padding: 20px;
             position: fixed;
             bottom: 0;
             width: 100%;
             color: #fff;
             text-align: center;
-            font-size: 1.1em;
+            font-size: 1.2em;
         }
 
         footer p {
@@ -146,7 +168,7 @@
             }
 
             p {
-                font-size: 1em;
+                font-size: 1.1em;
             }
         }
 
