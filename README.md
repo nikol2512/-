@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="he">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +7,7 @@
         /* סגנון כללי */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f3f4f8;
+            background-color: #f0f8ff;
             color: #333;
             margin: 0;
             padding: 0;
@@ -29,7 +28,7 @@
 
         header h1 {
             margin: 0;
-            font-size: 4em;
+            font-size: 3.5em;
             font-weight: bold;
             letter-spacing: 2px;
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
@@ -44,11 +43,6 @@
         /* אנימציות */
         @keyframes fadeIn {
             0% { opacity: 0; transform: translateY(-20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes slideUp {
-            0% { opacity: 0; transform: translateY(20px); }
             100% { opacity: 1; transform: translateY(0); }
         }
 
@@ -184,7 +178,7 @@
         <h2>על טובה</h2>
         <p>טובה מומחית בתחום טיפולים הוליסטיים, מטפלת בטראומות, חרדות, חוסר נחת, ושלום בית.</p>
         <p>עם ניסיון רחב בעבודה עם מגוון בעיות, היא כאן כדי להחזיר לך את השלווה והאיזון בחיים.</p>
-        <img src="https://via.placeholder.com/800x400/FFD700/000000?text=%D7%98%D7%99%D7%A4%D7%95%D7%9C+%D7%94%D7%95%D7%9C%D7%99%D7%A1%D7%98%D7%99" alt="טיפולים הוליסטיים">
+        <img src="https://images.unsplash.com/photo-1531308581242-42916e0b6355?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjA0OXwwfDF8c2VhcmNofDJ8fG9yaWVuZ3xlbnwwfDB8fHwyfHw%3D&ixlib=rb-1.2.1&q=80&w=1080" alt="טיפולים הוליסטיים">
     </section>
 
     <section id="services">
@@ -194,14 +188,14 @@
             <li>טיפול בטראומות וחרדות</li>
             <li>הכוונה לטיפול בבעיות זוגיות ושלום בית</li>
         </ul>
-        <img src="https://via.placeholder.com/800x400/FFD700/000000?text=%D7%A9%D7%99%D7%A8%D7%95%D7%AA%D7%99%D7%9D+%D7%94%D7%95%D7%9C%D7%99%D7%A1%D7%98%D7%99%D7%99%D7%9D" alt="שירותים הוליסטיים">
+        <img src="https://images.unsplash.com/photo-1506514500612-bda68c052e6f?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg3fHwyfDF8c2VhcmNofDd8fGZlZWFsJTIwbGVpc3VyZXxlbnwwfDB8fHwyfHw%3D&ixlib=rb-1.2.1&q=80&w=1080" alt="שירותים הוליסטיים">
     </section>
 
     <section id="testimonials">
         <h2>עדויות מלקוחות</h2>
         <p>"טיפול מצוין, החזיר לי את השלווה והביטחון!" - יעל</p>
         <p>"תודה טובה, אני מרגיש הרבה יותר טוב!" - אבי</p>
-        <img src="https://via.placeholder.com/800x400/FFD700/000000?text=%D7%A2%D7%93%D7%95%D7%99%D7%95%D7%AA+%D7%9E%D7%9C%D7%90%D7%9B%D7%95%D7%AA" alt="עדויות מלקוחות">
+        <img src="https://images.unsplash.com/photo-1605397152460-c31a4761d8a9?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg3fHwyfDF8c2VhcmNofDd8fGZlZWFsJTIwbGVpc3VyZXxlbnwwfDB8fHwyfHw%3D&ixlib=rb-1.2.1&q=80&w=1080" alt="עדויות מלקוחות">
     </section>
 
     <section id="contact">
