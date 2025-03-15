@@ -4,7 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>אור של טובה - טיפולים הוליסטיים</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #87cefa;
+            padding: 40px;
+            color: #fff;
+            border-bottom: 5px solid #4682b4;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        section {
+            padding: 30px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #4682b4;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            font-size: 1.2em;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        a {
+            color: #4682b4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #87cefa;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #fff;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            section {
+                margin: 10px;
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -47,58 +146,3 @@
     </footer>
 </body>
 </html>
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-header {
-    background-color: #87cefa;
-    padding: 20px;
-    color: #fff;
-}
-
-h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-h2 {
-    color: #4682b4;
-}
-
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-a {
-    color: #4682b4;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    background-color: #87cefa;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    color: #fff;
-}
