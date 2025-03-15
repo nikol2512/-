@@ -1,4 +1,5 @@
-=<html lang="he">
+<!DOCTYPE html>
+<html lang="he">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,7 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7f7f7;
+            background-color: #f1f1f1;
             color: #333;
             overflow-x: hidden;
             transition: background-color 0.3s ease;
@@ -18,19 +19,20 @@
         /* כותרת ראשית */
         header {
             background: linear-gradient(45deg, #FF7F50, #FFDD00);
-            padding: 100px 20px;
+            padding: 120px 20px;
             color: white;
             text-align: center;
-            animation: fadeIn 2s ease-in-out;
             position: relative;
+            z-index: 1;
         }
 
         header h1 {
             margin: 0;
             font-size: 3.5em;
             font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
             letter-spacing: 2px;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
         }
 
         header p {
@@ -39,7 +41,7 @@
             font-weight: lighter;
         }
 
-        /* אנימציות */
+        /* אנימציה של כותרת */
         @keyframes fadeIn {
             0% { opacity: 0; transform: translateY(-20px); }
             100% { opacity: 1; transform: translateY(0); }
@@ -51,12 +53,7 @@
             font-size: 2.5em;
             margin-bottom: 15px;
             font-weight: bold;
-            animation: slideUp 1.5s ease-out;
-        }
-
-        @keyframes slideUp {
-            0% { opacity: 0; transform: translateY(30px); }
-            100% { opacity: 1; transform: translateY(0); }
+            animation: fadeIn 1s ease-in-out;
         }
 
         /* עיצוב הסקשנים */
@@ -67,7 +64,6 @@
             border-radius: 15px;
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
-            animation: slideUp 2s ease-out;
             max-width: 1000px;
             text-align: center;
         }
@@ -92,6 +88,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             margin: 20px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
         }
 
         .service-card:hover {
